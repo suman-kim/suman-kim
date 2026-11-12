@@ -49,5 +49,9 @@
 
 ### Latest Posts
 
-<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:START -->- [2026년 2회 정보처리기사 실기 후기](https://ssirioops.tistory.com/45) <sub>2026.08.01</sub>
+- [60회 SQLD 자격증 시험 후기](https://ssirioops.tistory.com/43) <sub>2026.03.08</sub>
+- [4. SQL 활용](https://ssirioops.tistory.com/42) <sub>2026.03.08</sub>
+- [3. SQL 기본](https://ssirioops.tistory.com/41) <sub>2026.03.08</sub>
+- [2. 데이터 모델과 SQL](https://ssirioops.tistory.com/40) <sub>2026.03.08</sub>
 <!-- BLOG-POST-LIST:END -->
