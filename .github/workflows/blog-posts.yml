@@ -1,0 +1,23 @@
+# 기술 블로그(Tistory) 최신 글 5개를 README의 Latest Posts에 매일 채워 넣습니다.
+name: Latest blog posts
+
+on:
+  schedule:
+    - cron: "0 15 * * *"   # 매일 00:00 KST
+  workflow_dispatch:        # Actions 탭에서 바로 실행
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://ssirioops.tistory.com/rss"
+          max_post_count: 5
+          template: "- [$title]($url) <sub>$date</sub>$newline"
+          date_format: "yyyy.mm.dd"
+          commit_message: "chore: 최신 블로그 글 갱신"
