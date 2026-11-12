@@ -13,7 +13,7 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://ssirioops.tistory.com/rss"
@@ -21,3 +21,5 @@ jobs:
           template: "- [$title]($url) <sub>$date</sub>$newline"
           date_format: "yyyy.mm.dd"
           commit_message: "chore: 최신 블로그 글 갱신"
+          accept_header: "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5"
+          user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
