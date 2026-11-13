@@ -47,13 +47,13 @@
   </picture>
 </p>
 
-### Latest Posts
-
-<!-- BLOG-POST-LIST:START -->
-- [2026년 2회 정보처리기사 실기 후기](https://ssirioops.tistory.com/45) <sub>2026.08.01</sub>
-- [60회 SQLD 자격증 시험 후기](https://ssirioops.tistory.com/43) <sub>2026.03.08</sub>
-- [4. SQL 활용](https://ssirioops.tistory.com/42) <sub>2026.03.08</sub>
-- [3. SQL 기본](https://ssirioops.tistory.com/41) <sub>2026.03.08</sub>
-- [2. 데이터 모델과 SQL](https://ssirioops.tistory.com/40) <sub>2026.03.08</sub>
-
-<!-- BLOG-POST-LIST:END -->
+<!-- BLOG-CARDS:START -->
+<p>
+  <a href="https://ssirioops.tistory.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/blog-head-dark.svg"><img src="./assets/blog-head-light.svg" width="100%" alt="최근 글 — 기술 블로그"></picture></a>
+  <a href="https://ssirioops.tistory.com/45"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/blog-1-dark.svg"><img src="./assets/blog-1-light.svg" width="100%" alt="2026.08.01 2026년 2회 정보처리기사 실기 후기"></picture></a>
+  <a href="https://ssirioops.tistory.com/43"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/blog-2-dark.svg"><img src="./assets/blog-2-light.svg" width="100%" alt="2026.03.08 60회 SQLD 자격증 시험 후기"></picture></a>
+  <a href="https://ssirioops.tistory.com/42"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/blog-3-dark.svg"><img src="./assets/blog-3-light.svg" width="100%" alt="2026.03.08 4. SQL 활용"></picture></a>
+  <a href="https://ssirioops.tistory.com/41"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/blog-4-dark.svg"><img src="./assets/blog-4-light.svg" width="100%" alt="2026.03.08 3. SQL 기본"></picture></a>
+  <a href="https://ssirioops.tistory.com/40"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/blog-5-dark.svg"><img src="./assets/blog-5-light.svg" width="100%" alt="2026.03.08 2. 데이터 모델과 SQL"></picture></a>
+</p>
+<!-- BLOG-CARDS:END -->

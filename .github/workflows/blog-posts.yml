@@ -1,4 +1,4 @@
-# 기술 블로그(Tistory) 최신 글 5개를 README의 Latest Posts에 매일 채워 넣습니다.
+# 기술 블로그(Tistory) 최신 글 5개를 카드 이미지로 그려 README의 '최근 글'에 매일 채워 넣습니다.
 name: Latest blog posts
 
 on:
@@ -14,14 +14,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: gautamkrishnar/blog-post-workflow@v1
+      - uses: actions/setup-node@v5
         with:
-          feed_list: "https://ssirioops.tistory.com/rss"
-          max_post_count: 5
-          template: "- [$title]($url) <sub>$date</sub>$newline"
-          date_format: "yyyy.mm.dd"
-          commit_message: "chore: 최신 블로그 글 갱신"
-          # 시작 주석 뒤에 줄바꿈을 넣어야 첫 글이 목록으로 보입니다 (없으면 "- [제목](링크)"가 글자 그대로 나옴)
-          tag_post_pre_newline: true
-          accept_header: "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5"
-          user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+          node-version: 22
+      - name: Draw blog cards
+        env:
+          BLOG_FEED: https://ssirioops.tistory.com/rss
+          BLOG_MAX: 5
+        run: node scripts/blog.mjs
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/blog-*.svg
+          git diff --cached --quiet || git commit -m "chore: 최신 블로그 글 갱신"
+          git pull --rebase --autostash
+          git push
