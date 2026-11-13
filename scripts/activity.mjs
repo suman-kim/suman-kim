@@ -104,7 +104,7 @@ function card(t, d, mode, stamp) {
 const data = MODE === 'placeholder' ? null : MODE === 'sample' ? sampleData() : await fetchData();
 if (data) data.streak = streak(data.days);
 const kst = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10).replace(/-/g, '.');
-const stamp = MODE === 'placeholder' ? '첫 실행 대기 중' : `매일 자동 갱신 · ${kst}`;
+const stamp = MODE === 'placeholder' ? '첫 실행 대기 중' : '';
 mkdirSync('assets', { recursive: true });
 for (const th of ['dark', 'light']) writeFileSync(`assets/activity-${th}.svg`, card(T[th], data, MODE, stamp));
 console.log(MODE, data ? { total: data.total, commits: data.commits, prs: data.prs, streak: data.streak, langs: Object.keys(data.langs).length } : '');

@@ -38,11 +38,11 @@ function head(t, n) {
   return frame(t, H, `<g class="up"><rect x="64" y="70" width="28" height="1.5" fill="${t.accent}"/><text class="m" x="104" y="77" font-size="16" letter-spacing="2.9" fill="${t.accent}">06 · WRITING</text>
 <text class="m" x="1216" y="77" font-size="15" letter-spacing="1.6" fill="${t.muted}" text-anchor="end">${esc(BLOG.replace(/^https?:\/\//, '').toUpperCase())} ↗</text>
 <text x="62" y="140" font-size="50" font-weight="800" letter-spacing="-2" fill="${t.ink}">최근 글</text>
-<text x="1216" y="138" font-size="18" fill="${t.muted}" text-anchor="end">기술 블로그의 새 글 ${n}개 · 매일 자동 갱신</text></g>`, '최근 글 — 기술 블로그');
+<text x="1216" y="138" font-size="18" fill="${t.muted}" text-anchor="end">기술 블로그의 새 글 ${n}개</text></g>`, '최근 글 — 기술 블로그');
 }
 function row(t, p, i) {
   const H = 124, title = fit(p.title, 28, 860);
-  const sub = [p.category, 'Tistory'].filter(Boolean).join(' · ');
+  const sub = [p.category.split('/').map(s => s.trim()).filter(Boolean).join(' › '), 'Tistory'].filter(Boolean).join(' · ');
   return frame(t, H, `<g class="up" style="animation-delay:${.05 + i * .06}s">
 <text class="m" x="64" y="56" font-size="15" letter-spacing="1.5" fill="${t.accent}">${String(i + 1).padStart(2, '0')}</text>
 <text class="m" x="64" y="84" font-size="15" letter-spacing=".6" fill="${t.muted}">${esc(p.date)}</text>
