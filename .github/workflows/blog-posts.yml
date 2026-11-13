@@ -21,5 +21,7 @@ jobs:
           template: "- [$title]($url) <sub>$date</sub>$newline"
           date_format: "yyyy.mm.dd"
           commit_message: "chore: 최신 블로그 글 갱신"
+          # 시작 주석 뒤에 줄바꿈을 넣어야 첫 글이 목록으로 보입니다 (없으면 "- [제목](링크)"가 글자 그대로 나옴)
+          tag_post_pre_newline: true
           accept_header: "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5"
           user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"

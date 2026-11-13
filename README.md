@@ -16,7 +16,7 @@
 <p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/now-dark.svg">
-    <img src="./assets/now-light.svg" width="100%" alt="지금 개발하고 있는 것 — 사이퍼즈 메타(운영 중), Link(운영 중), Snapmark(출시 중), Lune(비공개 테스트), 오늘날씨(개발 중), AI 캐릭터 채팅(개발 중), AI 쿠킹(개발 중), AI 숏드라마 생성(시작), 위치 기반 스토리 게임(구상). 출시를 목표로 하는 프로젝트는 대부분 저장소가 비공개(private)라 코드를 공개하지 못합니다.">
+    <img src="./assets/now-light.svg" width="100%" alt="진행 중인 프로젝트 — 사이퍼즈 메타(운영 중), Link(운영 중), Snapmark(출시 중), Lune(비공개 테스트), 오늘날씨(개발 중), AI 캐릭터 채팅(개발 중), AI 쿠킹(개발 중), AI 숏드라마 생성(시작), 위치 기반 스토리 게임(구상). 출시를 목표로 하는 프로젝트는 대부분 저장소가 비공개(private)라 코드를 공개하지 못합니다.">
   </picture>
 </p>
 
@@ -30,14 +30,14 @@
 <p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/exploring-dark.svg">
-    <img src="./assets/exploring-light.svg" width="100%" alt="요즘 파고 있는 것 — AI 숏드라마 · 쇼츠 영상(요즘 가장 많이 — 주제 기획은 AI, 제작은 로컬 Ollama · Seedance), LLM·RAG, AI 코딩 에이전트, 실시간 미디어">
+    <img src="./assets/exploring-light.svg" width="100%" alt="최근 관심사 — AI 숏드라마 · 쇼츠 영상(요즘 가장 많이 — 주제 기획은 AI, 제작은 로컬 Ollama · Seedance), LLM·RAG, AI 코딩 에이전트, 실시간 미디어">
   </picture>
 </p>
 
 <p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/homelab-dark.svg">
-    <img src="./assets/homelab-light.svg" width="100%" alt="어디서, 무엇으로 만드나 — MacBook(개발), 우분투 홈서버(윈도우 PC를 우분투로 전환 · 오늘날씨 서버 · Ollama), Railway, AWS / Google Stitch → Figma(MCP), Claude Code · Task Master MCP · Hub, Ollama, SSH · RustDesk">
+    <img src="./assets/homelab-light.svg" width="100%" alt="개발 환경과 인프라 — MacBook(개발), 우분투 홈서버(윈도우 PC를 우분투로 전환 · 오늘날씨 서버 · Ollama), Railway, AWS / Google Stitch → Figma(MCP), Claude Code · Task Master MCP · Hub, Ollama, SSH · RustDesk">
   </picture>
 </p>
 <p>
@@ -49,9 +49,11 @@
 
 ### Latest Posts
 
-<!-- BLOG-POST-LIST:START -->- [2026년 2회 정보처리기사 실기 후기](https://ssirioops.tistory.com/45) <sub>2026.08.01</sub>
+<!-- BLOG-POST-LIST:START -->
+- [2026년 2회 정보처리기사 실기 후기](https://ssirioops.tistory.com/45) <sub>2026.08.01</sub>
 - [60회 SQLD 자격증 시험 후기](https://ssirioops.tistory.com/43) <sub>2026.03.08</sub>
 - [4. SQL 활용](https://ssirioops.tistory.com/42) <sub>2026.03.08</sub>
 - [3. SQL 기본](https://ssirioops.tistory.com/41) <sub>2026.03.08</sub>
 - [2. 데이터 모델과 SQL](https://ssirioops.tistory.com/40) <sub>2026.03.08</sub>
+
 <!-- BLOG-POST-LIST:END -->
