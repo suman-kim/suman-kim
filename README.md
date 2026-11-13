@@ -43,7 +43,7 @@
 <p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
-    <img src="./assets/activity-light.svg" width="100%" alt="GitHub 활동 — 최근 1년의 기여, 커밋, Pull Request, 연속 기여일, 기여 그래프, 많이 쓴 언어 (매일 자동 갱신)">
+    <img src="./assets/activity-light.svg" width="100%" alt="GitHub 활동 — 최근 1년의 기여, 커밋, Pull Request, 연속 기여일, 기여 그래프, 많이 쓴 언어">
   </picture>
 </p>
 
